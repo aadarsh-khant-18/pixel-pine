@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hero {
+  background: url('./assets/contour-bg.svg');
+  /* animation: moveContour 2s infinite alternate; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 33.33%;
+}
+
+.logo {
+  margin: auto;
+  align-content: flex-start;
+  max-width: 380px;
+}
+
+.tagline,
+.coming-soon {
+  margin: auto;
+  color: #eee;
+  align-items: center;
+  text-align: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.tagline {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  max-width: 1000px;
+}
+
+.coming-soon {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+@keyframes moveContour {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(5px, 5px);
+  }
+}
+
+@media (min-width: 345px) and (max-width: 768px) {
+  .logo {
+    max-width: 280px;
+  }
+
+  .tagline {
+    font-size: 48px;
+    padding: 24px;
+  }
+
+  .coming-soon {
+    font-size: 24px;
+  }
+}
